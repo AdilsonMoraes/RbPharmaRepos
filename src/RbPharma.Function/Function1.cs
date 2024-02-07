@@ -8,21 +8,24 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Options;
+using RbPharma.Services.V1.Interfaces;
 
 namespace RbPharma.Function
 {
     public class Function1
     {
         private readonly MyOptions _myOptions;
+        private readonly IUserService _userService;
 
-        public Function1(IOptions<MyOptions> options)
+        public Function1(IOptions<MyOptions> options, IUserService userService)
         {
             _myOptions = options.Value;
+            _userService = userService;
         }
 
 
-        [FunctionName("ReadData")]
-        public  async Task<IActionResult> ReadData(
+        [FunctionName("GetUserById")]
+        public  async Task<IActionResult> GetUserById(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
@@ -33,21 +36,22 @@ namespace RbPharma.Function
 
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            string name = req.Query["name"];
+            string userId = req.Query["userId"];
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            userId = userId ?? data?.userId;
 
-            string responseMessage = string.IsNullOrEmpty(name)
+            string responseMessage = string.IsNullOrEmpty(userId)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+                : $"Hello, {userId}. This HTTP triggered function executed successfully.";
 
             return new OkObjectResult(responseMessage);
         }
 
-        [FunctionName("CreateData")]
-        public async Task<IActionResult> CreateData(
+
+        [FunctionName("CreateUser")]
+        public async Task<IActionResult> CreateUser(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log)
         {
@@ -71,8 +75,8 @@ namespace RbPharma.Function
             return new OkObjectResult(responseMessage);
         }
 
-        [FunctionName("UpdateData")]
-        public async Task<IActionResult> UpdateData(
+        [FunctionName("UpdateUser")]
+        public async Task<IActionResult> UpdateUser(
             [HttpTrigger(AuthorizationLevel.Function, "put", Route = null)] HttpRequest req,
             ILogger log)
         {
@@ -96,8 +100,8 @@ namespace RbPharma.Function
             return new OkObjectResult(responseMessage);
         }
 
-        [FunctionName("DeleteData")]
-        public async Task<IActionResult> DeleteData(
+        [FunctionName("DeleteUser")]
+        public async Task<IActionResult> DeleteUser(
             [HttpTrigger(AuthorizationLevel.Function, "delete", Route = null)] HttpRequest req,
             ILogger log)
         {

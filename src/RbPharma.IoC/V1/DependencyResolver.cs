@@ -1,9 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RbPharma.Infrastructure.V1.Interfaces;
+using RbPharma.Services.V1;
+using RbPharma.Services.V1.Interfaces;
 
 namespace RbPharma.IoC.V1
 {
@@ -11,13 +9,12 @@ namespace RbPharma.IoC.V1
     {
         public static void RegisterServices(IServiceCollection services)
         {
-
-
+            services.AddTransient<IUserService, UserService>();
         }
 
         public static void RegisterInfrastructure(IServiceCollection services)
         {
-
+            services.AddTransient<IUserRepository, UserRepository>();
         }
     }
 }

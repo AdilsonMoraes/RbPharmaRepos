@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="V1\Interfaces\" />
+    <ProjectReference Include="..\RbPharma.Infrastructure\RbPharma.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
