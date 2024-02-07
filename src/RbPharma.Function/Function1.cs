@@ -21,11 +21,9 @@ namespace RbPharma.Function
         }
 
 
-
-
-        [FunctionName("Function1")]
-        public  async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+        [FunctionName("ReadData")]
+        public  async Task<IActionResult> ReadData(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
 
@@ -47,5 +45,81 @@ namespace RbPharma.Function
 
             return new OkObjectResult(responseMessage);
         }
+
+        [FunctionName("CreateData")]
+        public async Task<IActionResult> CreateData(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+            ILogger log)
+        {
+
+            if (_myOptions.MySettings == "true")
+                log.LogInformation("_myOptions.MySettings == true");
+
+
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            string name = req.Query["name"];
+
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            name = name ?? data?.name;
+
+            string responseMessage = string.IsNullOrEmpty(name)
+                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+            return new OkObjectResult(responseMessage);
+        }
+
+        [FunctionName("UpdateData")]
+        public async Task<IActionResult> UpdateData(
+            [HttpTrigger(AuthorizationLevel.Function, "put", Route = null)] HttpRequest req,
+            ILogger log)
+        {
+
+            if (_myOptions.MySettings == "true")
+                log.LogInformation("_myOptions.MySettings == true");
+
+
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            string name = req.Query["name"];
+
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            name = name ?? data?.name;
+
+            string responseMessage = string.IsNullOrEmpty(name)
+                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+            return new OkObjectResult(responseMessage);
+        }
+
+        [FunctionName("DeleteData")]
+        public async Task<IActionResult> DeleteData(
+            [HttpTrigger(AuthorizationLevel.Function, "delete", Route = null)] HttpRequest req,
+            ILogger log)
+        {
+
+            if (_myOptions.MySettings == "true")
+                log.LogInformation("_myOptions.MySettings == true");
+
+
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            string name = req.Query["name"];
+
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            name = name ?? data?.name;
+
+            string responseMessage = string.IsNullOrEmpty(name)
+                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+            return new OkObjectResult(responseMessage);
+        }
+
     }
 }
