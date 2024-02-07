@@ -5,12 +5,12 @@
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "Myoptions:MySettings": false,
     "myconnection": "https://myadls2account.blob.core.windows.net",
-  }
+  },
       
-  //"Logging": {
-  //  "LogLevel": {
-  //    "Default": "Information",
-  //    "Microsoft.AspNetCore": "Warning"
-  //  }
-  //}
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
 }
