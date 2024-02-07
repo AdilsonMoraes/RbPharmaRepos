@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RbPharma.Domain.V1.Entities
 {
-    public class User : EntityBase
+    public class User : BaseEntity
     {
         public string UserName { get; set; }
     }

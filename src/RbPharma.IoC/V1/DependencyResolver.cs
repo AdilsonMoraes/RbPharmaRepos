@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using RbPharma.Infrastructure.V1.Interfaces;
+using RbPharma.Infrastructure.GenericInterfaces.V1;
+using RbPharma.Infrastructure.GenericInterfaces.V1.Interfaces;
+using RbPharma.Infrastructure.Users.V1.Repositories;
+using RbPharma.Infrastructure.Users.V1.Repositories.Interfaces;
 using RbPharma.Services.V1;
 using RbPharma.Services.V1.Interfaces;
 
@@ -16,11 +18,6 @@ namespace RbPharma.IoC.V1
         public static void RegisterInfrastructure(IServiceCollection services)
         {
             services.AddTransient<IUserRepository, UserRepository>();
-        }
-
-        public static void RegisterLogging(this IServiceCollection services)
-        {
-            services.AddTransient(typeof(ILogger<>), typeof(Logger<>));
         }
     }
 }

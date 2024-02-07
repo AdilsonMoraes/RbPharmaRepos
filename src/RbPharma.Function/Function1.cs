@@ -26,7 +26,7 @@ namespace RbPharma.Function
 
         [FunctionName("GetUserById")]
         public  async Task<IActionResult> GetUserById(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
 
@@ -52,7 +52,7 @@ namespace RbPharma.Function
 
         [FunctionName("CreateUser")]
         public async Task<IActionResult> CreateUser(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
             ILogger log)
         {
 
@@ -77,7 +77,7 @@ namespace RbPharma.Function
 
         [FunctionName("UpdateUser")]
         public async Task<IActionResult> UpdateUser(
-            [HttpTrigger(AuthorizationLevel.Function, "put", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "put", Route = null)] HttpRequest req,
             ILogger log)
         {
 
@@ -102,7 +102,7 @@ namespace RbPharma.Function
 
         [FunctionName("DeleteUser")]
         public async Task<IActionResult> DeleteUser(
-            [HttpTrigger(AuthorizationLevel.Function, "delete", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = null)] HttpRequest req,
             ILogger log)
         {
 

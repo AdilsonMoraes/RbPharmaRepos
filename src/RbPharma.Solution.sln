@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.Services", "RbPharma.Services\RbPharma.Services.csproj", "{4C693278-9C6C-48E5-B11E-C5F4A0AEB3B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Services", "RbPharma.Services\RbPharma.Services.csproj", "{4C693278-9C6C-48E5-B11E-C5F4A0AEB3B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.Domain", "RbPharma.Domain\RbPharma.Domain.csproj", "{CC01174D-B9A7-40D5-ACC3-7DEA1C3AA12B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Domain", "RbPharma.Domain\RbPharma.Domain.csproj", "{CC01174D-B9A7-40D5-ACC3-7DEA1C3AA12B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.Infrastructure", "RbPharma.Infrastructure\RbPharma.Infrastructure.csproj", "{5E886408-F589-4B1A-A7EB-8950C191C236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Infrastructure", "RbPharma.Infrastructure\RbPharma.Infrastructure.csproj", "{5E886408-F589-4B1A-A7EB-8950C191C236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.IoC", "RbPharma.IoC\RbPharma.IoC.csproj", "{FCDFD32A-2528-45F2-8A50-12B1170AADCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.IoC", "RbPharma.IoC\RbPharma.IoC.csproj", "{FCDFD32A-2528-45F2-8A50-12B1170AADCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.Tests", "RbPharma.Tests\RbPharma.Tests.csproj", "{66E87070-4796-4809-934B-5749B4748C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Tests", "RbPharma.Tests\RbPharma.Tests.csproj", "{66E87070-4796-4809-934B-5749B4748C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbPharma.Function", "RbPharma.Function\RbPharma.Function.csproj", "{EDF78943-2443-4C12-A9F4-072A8B39C0F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Function", "RbPharma.Function\RbPharma.Function.csproj", "{EDF78943-2443-4C12-A9F4-072A8B39C0F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

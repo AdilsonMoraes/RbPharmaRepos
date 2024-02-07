@@ -1,4 +1,4 @@
-﻿using RbPharma.Infrastructure.V1.Interfaces;
+﻿using RbPharma.Infrastructure.Users.V1.Repositories.Interfaces;
 using RbPharma.Services.V1.Interfaces;
 
 namespace RbPharma.Services.V1
@@ -11,5 +11,8 @@ namespace RbPharma.Services.V1
         {
             _userRepository = userRepository;
         }
+
+
+
     }
 }

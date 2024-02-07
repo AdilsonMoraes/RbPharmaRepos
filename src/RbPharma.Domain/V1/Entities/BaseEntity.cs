@@ -3,10 +3,12 @@ using System.Runtime.Serialization;
 
 namespace RbPharma.Domain.V1.Entities
 {
-    public abstract class EntityBase
+    public abstract class BaseEntity
     {
-        [DataMember]
-        [NotMapped]
-        public int Id { get; set; }
+        public Int64 Id
+        {
+            get;
+            set;
+        }
     }
 }

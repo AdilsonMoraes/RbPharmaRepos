@@ -8,10 +8,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RbPharma.Domain\RbPharma.Domain.csproj" />
     <ProjectReference Include="..\RbPharma.Infrastructure\RbPharma.Infrastructure.csproj" />
     <ProjectReference Include="..\RbPharma.Services\RbPharma.Services.csproj" />
   </ItemGroup>

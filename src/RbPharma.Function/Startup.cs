@@ -19,7 +19,6 @@ namespace RbPharma.Function
             //Regiister Dependency
             DependencyResolver.RegisterServices(builder.Services);
             DependencyResolver.RegisterInfrastructure(builder.Services);
-            DependencyResolver.RegisterLogging(builder.Services);
         }
     }
 }
