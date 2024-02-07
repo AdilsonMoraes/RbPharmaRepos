@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/RbPharma.Solution/FileContentIndex
+/src/.vs/RbPharma.Solution/v17/.suo
+/src/RbPharma.Domain/obj/Debug/net6.0/RbPharma.Domain.assets.cache
+/src/RbPharma.Domain/obj/Debug/net6.0/RbPharma.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/src/RbPharma.Tests/obj/Debug/net6.0
+/src/RbPharma.Tests/obj
+/src/RbPharma.Services/obj/RbPharma.Services.csproj.nuget.g.targets
+/src/RbPharma.Infrastructure/obj/Debug/net6.0/RbPharma.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/src/RbPharma.Infrastructure/obj/Debug/net6.0/RbPharma.Infrastructure.assets.cache
+/src/RbPharma.Domain/obj
+/src/RbPharma.Services/obj/Debug/net6.0/RbPharma.Services.GeneratedMSBuildEditorConfig.editorconfig
+/src/RbPharma.Services/obj/Debug/net6.0/RbPharma.Services.assets.cache
+/src/RbPharma.Infrastructure/obj
+/src/RbPharma.IoC/bin/Debug/net6.0/RbPharma.IoC.pdb
+/src/RbPharma.IoC/bin/Debug/net6.0/RbPharma.IoC.dll
+/src/RbPharma.Services/obj
+/src/RbPharma.IoC/obj/RbPharma.IoC.csproj.nuget.g.targets
+/src/RbPharma.IoC/obj/Debug/net6.0
+/src/RbPharma.IoC/obj
