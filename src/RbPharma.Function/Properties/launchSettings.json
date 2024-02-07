@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "RbPharma.Function": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 32238,
+      "useSSL": false
+    }
+  }
+}

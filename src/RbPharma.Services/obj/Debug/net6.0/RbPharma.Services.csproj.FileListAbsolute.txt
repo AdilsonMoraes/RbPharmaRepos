@@ -1,0 +1,12 @@
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\bin\Debug\net6.0\RbPharma.Services.deps.json
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\bin\Debug\net6.0\RbPharma.Services.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\bin\Debug\net6.0\RbPharma.Services.pdb
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.csproj.AssemblyReference.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.AssemblyInfoInputs.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.AssemblyInfo.cs
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.csproj.CoreCompileInputs.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\refint\RbPharma.Services.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\RbPharma.Services.pdb
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Services\obj\Debug\net6.0\ref\RbPharma.Services.dll

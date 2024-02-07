@@ -1,0 +1,12 @@
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\bin\Debug\net6.0\RbPharma.Infrastructure.deps.json
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\bin\Debug\net6.0\RbPharma.Infrastructure.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\bin\Debug\net6.0\RbPharma.Infrastructure.pdb
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.csproj.AssemblyReference.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.AssemblyInfo.cs
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\refint\RbPharma.Infrastructure.dll
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\RbPharma.Infrastructure.pdb
+D:\Projects\Pessoais\RbPharma-test\RbPharma\RbPharma.Infrastructure\obj\Debug\net6.0\ref\RbPharma.Infrastructure.dll

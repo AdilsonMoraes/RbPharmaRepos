@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="V1\Configurations\" />
+    <Folder Include="V1\Entities\" />
+    <Folder Include="V1\Enums\" />
+    <Folder Include="V1\Models\" />
+  </ItemGroup>
+
+</Project>
