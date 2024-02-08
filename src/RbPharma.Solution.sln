@@ -15,20 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Tests", "RbPharma.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbPharma.Function", "RbPharma.Function\RbPharma.Function.csproj", "{EDF78943-2443-4C12-A9F4-072A8B39C0F7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{54EAC191-2D59-423A-B520-423B74170C8C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseBkp", "DatabaseBkp", "{DC794049-77F8-45C9-9655-A042C2B3FB16}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RbPharma", "RbPharma", "{85E63E6E-9385-4A1E-880B-70C4D17BD848}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\RbPharma.bak = C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup\RbPharma.bak
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RbPharmaLocalCollection", "RbPharmaLocalCollection", "{72A2B9D3-8D36-4FC7-BFAD-5BBE66DCBAD8}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Users\AdilsonGalp\Desktop\RbPharma local.postman_collection.json = ..\..\..\..\Users\AdilsonGalp\Desktop\RbPharma local.postman_collection.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -166,10 +152,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{85E63E6E-9385-4A1E-880B-70C4D17BD848} = {DC794049-77F8-45C9-9655-A042C2B3FB16}
-		{72A2B9D3-8D36-4FC7-BFAD-5BBE66DCBAD8} = {54EAC191-2D59-423A-B520-423B74170C8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C08D7B0-F9D3-4E4C-B96F-0107D4CB1E55}

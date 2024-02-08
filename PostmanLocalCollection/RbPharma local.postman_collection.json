@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "89015519-f7c7-4aef-8ad6-76f4f5f05c2f",
+		"name": "RbPharma local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1881852",
+		"_collection_link": "https://www.postman.com/adilsonmm/workspace/npf/collection/1881852-89015519-f7c7-4aef-8ad6-76f4f5f05c2f?action=share&source=collection_link&creator=1881852"
+	},
+	"item": [
+		{
+			"name": "GetUserById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrbBase}}/GetUserById?id=1",
+					"host": [
+						"{{UrbBase}}"
+					],
+					"path": [
+						"GetUserById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrbBase}}/GetAllUsers",
+					"host": [
+						"{{UrbBase}}"
+					],
+					"path": [
+						"GetAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"NewUser 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrbBase}}/CreateUser",
+					"host": [
+						"{{UrbBase}}"
+					],
+					"path": [
+						"CreateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2,\r\n    \"UserName\": \"NewUser Update 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrbBase}}/UpdateUser",
+					"host": [
+						"{{UrbBase}}"
+					],
+					"path": [
+						"UpdateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrbBase}}/DeleteUser",
+					"host": [
+						"{{UrbBase}}"
+					],
+					"path": [
+						"DeleteUser"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "UrbBase",
+			"value": "http://localhost:7071/api",
+			"type": "string"
+		}
+	]
+}
