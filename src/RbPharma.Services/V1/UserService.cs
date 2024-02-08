@@ -119,7 +119,10 @@ namespace RbPharma.Services.V1
                 var userUpdate = await _userRepository.GetById(user.Id);
 
                 if (userUpdate != null)
+                {
+                    userUpdate.UserName = requestViewModel.UserName;
                     await _userRepository.UpdateUser(userUpdate);
+                }
 
                 response.Data = string.Empty;
                 response.Status = ResponseStatus.Success.ToString();
