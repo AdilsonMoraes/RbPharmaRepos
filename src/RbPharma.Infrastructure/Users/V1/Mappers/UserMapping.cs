@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using RbPharma.Domain.V1.Entities;
+using RbPharma.Domain.Entities.V1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace RbPharma.Infrastructure.Users.V1.Mappers
             builder.HasKey(p => p.Id);
 
             builder.Property(h => h.UserName)
-                .HasColumnName("Usuario")
+                .HasColumnName("UserName")
                 .IsUnicode(false)
                 .HasMaxLength(25)
                 .IsRequired();

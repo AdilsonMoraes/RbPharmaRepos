@@ -1,14 +1,14 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using RbPharma.Services.V1.Interfaces;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace RbPharma.Function
 {
@@ -16,11 +16,13 @@ namespace RbPharma.Function
     {
         private readonly MyOptions _myOptions;
         private readonly IUserService _userService;
+        private readonly IConfiguration _configuration;
 
-        public Function1(IOptions<MyOptions> options, IUserService userService)
+        public Function1(IOptions<MyOptions> options, IUserService userService, IConfiguration configuration)
         {
             _myOptions = options.Value;
             _userService = userService;
+            _configuration = configuration;
         }
 
 
@@ -29,6 +31,10 @@ namespace RbPharma.Function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
+
+
+            var users = _userService.GetAllUsers();
+
 
             if(_myOptions.MySettings == "true")
                 log.LogInformation("_myOptions.MySettings == true");

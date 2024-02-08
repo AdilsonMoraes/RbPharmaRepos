@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RbPharma.Domain.V1.Entities
+namespace RbPharma.Domain.Entities.V1
 {
     public class User : BaseEntity
     {

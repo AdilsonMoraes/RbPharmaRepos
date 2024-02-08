@@ -1,4 +1,4 @@
-﻿using RbPharma.Domain.V1.Entities;
+﻿using RbPharma.Domain.Entities.V1;
 
 namespace RbPharma.Infrastructure.Users.V1.Repositories.Interfaces
 {

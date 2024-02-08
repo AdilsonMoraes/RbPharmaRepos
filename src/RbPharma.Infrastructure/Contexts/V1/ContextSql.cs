@@ -1,26 +1,36 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RbPharma.Domain.V1.Entities;
+using Microsoft.Extensions.Configuration;
+using RbPharma.Domain.Entities.V1;
 using RbPharma.Infrastructure.Users.V1.Mappers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace RbPharma.Infrastructure.Contexts.V1
 {
     public class ContextSql : DbContext
     {
-        public virtual DbSet<User> User { get; set; }
+        private readonly IConfiguration _configuration;
 
-        public ContextSql(DbContextOptions<ContextSql> options) : base(options)
+        public ContextSql(DbContextOptions<ContextSql> options, IConfiguration configuration) : base(options)
         {
-
+            _configuration = configuration;
         }
+
+        public ContextSql()
+        {
+            
+        }
+
+        public virtual DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            var connectionSql = "Server=.;Database=RbPharma;Trusted_Connection=True;TrustServerCertificate=True";
 
+            if (_configuration !=null)
+                connectionSql = _configuration.GetSection("ConnectionStrings:ConnectionSql").Value;
+
+            if (!optionsBuilder.IsConfigured)
+                optionsBuilder.UseSqlServer(connectionSql);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

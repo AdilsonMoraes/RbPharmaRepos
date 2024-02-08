@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RbPharma.Domain.V1.Entities;
+using RbPharma.Domain.Entities.V1;
 using RbPharma.Infrastructure.Contexts.V1;
 using RbPharma.Infrastructure.GenericInterfaces.V1;
 using RbPharma.Infrastructure.Users.V1.Repositories.Interfaces;

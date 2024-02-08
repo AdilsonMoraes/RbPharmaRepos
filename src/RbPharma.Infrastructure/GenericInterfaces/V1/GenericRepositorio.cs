@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RbPharma.Domain.V1.Entities;
+using RbPharma.Domain.Entities.V1;
 using RbPharma.Infrastructure.Contexts.V1;
 using RbPharma.Infrastructure.GenericInterfaces.V1.Interfaces;
 using System;
@@ -23,7 +23,7 @@ namespace RbPharma.Infrastructure.GenericInterfaces.V1
 
         public IEnumerable<TEntity> GetAll()
         {
-            return entities.AsEnumerable();
+            return entities.AsEnumerable().ToList();
         }
         public async Task<TEntity> GetById(long id)
         {
@@ -44,6 +44,8 @@ namespace RbPharma.Infrastructure.GenericInterfaces.V1
             {
                 throw new ArgumentNullException("entity");
             }
+
+            entities.Update(entity);
             await _contextSql.SaveChangesAsync();
         }
         public async Task Delete(TEntity entity)
