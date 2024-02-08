@@ -1,6 +1,6 @@
 namespace RbPharma.Tests.V1
 {
-    public class UserTests
+    public class UserServiceTests
     {
         [Fact]
         public void Test1()

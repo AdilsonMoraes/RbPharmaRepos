@@ -24,10 +24,12 @@ namespace RbPharma.Infrastructure.Contexts.V1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionSql = "Server=.;Database=RbPharma;Trusted_Connection=True;TrustServerCertificate=True";
+            var connectionSql = string.Empty;
 
             if (_configuration !=null)
                 connectionSql = _configuration.GetSection("ConnectionStrings:ConnectionSql").Value;
+            else
+                connectionSql = "Server=.;Database=RbPharma;Trusted_Connection=True;TrustServerCertificate=True";
 
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseSqlServer(connectionSql);
